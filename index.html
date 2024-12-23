@@ -17,7 +17,7 @@
     <script type="module" crossorigin src="/Portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-CnGUHUXy.js">
     <link rel="stylesheet" crossorigin href="/Portfolio/assets/vendor-DfSqJtls.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DKwiZOWD.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DaCE-iuN.css">
   </head>
   <body>
     <section class="header" id="header">
@@ -117,10 +117,10 @@
           >
         </li>
       </ul>
-      <div class="hero-mail">
+      <div class="mail">
         <a
-          href="mailto:user@example.com?subject=Subject%20of%20email&amp;body=Message%20text&amp;cc=ccuser@example.com&amp;bcc=bccuser@example.com"
-          class="hero-mail-link"
+          href="mailto:lloydjefferson@gmail.com"
+          class="mail-link"
           title="Send email"
           rel="noopener noreferrer"
           >lloydjefferson@gmail.com</a
@@ -533,18 +533,62 @@
 
     <footer class="footer">
       <section class="section" id="worktogether">
-  <div class="worktogether container">
-    <img src="../img/image.svg" alt="PortfolioImg">
-    <h1>LET'S <span>WORK</span> TOGETHER</h1>
-    <form id="contactForm">
-        <input type="email" id="email" name="email" placeholder="clients@gmail.com" required>
-        <textarea id="comments" name="comments" rows="4" placeholder="comments" required></textarea>
-        <button type="submit">Send</button>
+  <div class="footer container">
+    <h2 class="footer-title">
+      <picture class="title-image">
+        <source
+          srcset="../img/ImgWorkTG/foto-tablet-desktop-min.png 1x, ../img/ImgWorkTG/foto-tablet-desktop@2x-min.png 2x"
+          media="(min-width: 1440px)"
+          type="image/webp"
+        />
+        <source
+          srcset="../img/ImgWorkTG/foto-mobile-min.png 1x, ../img/ImgWorkTG/foto-mobile@2x-min.png 2x"
+          media="(max-width: 1139px)"
+          type="image/webp"
+        />
+        <img
+          src="../img/ImgWorkTG/foto-tablet-desktop-min.png"
+          alt="Photo"
+          width="70"
+          height="70"
+        />
+      </picture>
+      Let’s <span class="footer-span"> work</span> together
+    </h2>
+    <form class="submit-form submit-form-js">
+      <div class="input-wrap">
+        <input
+          type="email"
+          class="input"
+          name="userEmail"
+          id="user-email"
+          placeholder="clients@gmail.com"
+        />
+        <span class="email-text-success">Success!</span>
+        <span class="email-text-error">Invalid email, try again!</span>
+        <input
+          type="text"
+          class="input"
+          name="userComments"
+          id="user-comments"
+          placeholder="comments"
+        />
+        <span class="comments-text-error">This field is required!</span>
+      </div>
+      <button class="send-btn" type="submit">Send</button>
     </form>
-    <div class="info">
-        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-        <a href="tel:+380111111111">+380 11 111 11 11</a>
-    </div>
+    <address class="contacts">
+      <ul class="contacts-list">
+        <li class="mail">
+          <a href="mailto:lloydjefferson@gmail.com" class="mail-link"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="mail">
+          <a href="tel:+3801111111111" class="mail-link">+380 11 1111 11 11</a>
+        </li>
+      </ul>
+    </address>
   </div>
 </section>
 
