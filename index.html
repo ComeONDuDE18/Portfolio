@@ -17,12 +17,12 @@
     <script type="module" crossorigin src="/Portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-nEFO1skc.js">
     <link rel="stylesheet" crossorigin href="/Portfolio/assets/vendor-BKiwnCwX.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-ByoNmN5H.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-BglE4OSy.css">
   </head>
   <body>
     <section class="header" id="header">
   <div class="navigation-menu container">
-    <a class="logo-link" href="../index.html">
+    <a class="logo-link" href="#header">
       <img src="../img/svg/logo.svg" alt="logo" />
       <!-- <svg class="logo" width="32" height="32">
         <use href="../img/portfolio-sprite.svg#icon-menu"></use>
@@ -32,12 +32,29 @@
     <button class="menu-btn">
       <img src="../img/svg/menu-open.svg" alt="menu-button" />
     </button>
-    <button class="menu-tab">Menu</button>
+      <div class="menu-container">
+    <button id="menuButton" class="menu-tab">Menu</button>
+    <ul id="dropdownMenu" class="dropdown hidden">
+        <ul class="dropdownMenu-list">
+          <li class="menu-item">
+            <a href="#aboutme" alt="About me">About me</a>
+          </li>
+          <li class="menu-item">
+            <a href="#benefits" alt="Benefits">Benefits</a>
+          </li>
+          <li class="menu-item">
+            <a href="#projects" alt="Projects">Projects</a>
+          </li>
+          <li class="menu-item">
+            <a href="#faq" alt="FAQ">FAQ</a>
+          </li>
+    </ul>
+  </div>
     <button class="order-btn order-btn-tab">
-      <a href="./worktogether.html">Order the project</a>
+      <a href="#worktogether">Order the project</a>
     </button>
   </div>
-  <div class="modal-overlay">
+  <div class="modal-overlay hidden">
     <div class="modal">
       <button class="modal-close-btn">
         <img src="../img/svg/menu-close.svg" alt="close-button" />
@@ -59,7 +76,7 @@
         </ul>
       </nav>
       <button class="order-btn">
-        <a href="./worktogether.html">Order the project</a>
+        <a href="#worktogether">Order the project</a>
       </button>
     </div>
   </div>
