@@ -13,8 +13,7 @@ const emailError = document.querySelector('.email-text-error');
 const commentError = document.querySelector('.comments-text-error');
 
 const sendUser = async ({ email, comment }) => {
-  const URL =
-    'https://portfolio-js.b.goit.study/api-docs/#/Requests/post_requests';
+  const URL = 'https://portfolio-js.b.goit.study/api/requests';
 
   const { data } = await axios.post(URL, { email, comment });
   return data;

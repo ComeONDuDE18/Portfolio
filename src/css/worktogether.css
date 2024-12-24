@@ -38,29 +38,32 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
-  border-color: transparent;
 }
 
 .input {
   width: 343px;
   height: 44px;
+  color: rgba(250, 250, 250, 0.6);
+  border: #1c1d20;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   background-color: transparent;
-  border-right: none;
 }
 
 .input:hover,
 .input:focus,
 .input:active {
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  color: #fafafa;
 }
 
 .email-text-success {
+  margin-top: 5px;
   display: none;
   color: #25c77c;
 }
 
 .email-text-error,
 .comments-text-error {
+  margin-top: 5px;
   display: none;
   color: #e33525;
 }
@@ -69,6 +72,7 @@
   width: 100px;
   height: 100px;
   border-radius: 100%;
+  border: none;
   background-color: #ed3b44;
   color: #fafafa;
   margin-top: 32px;
@@ -177,7 +181,7 @@
 
   .send-btn {
     top: -75%;
-    left: 60%;
+    left: 65%;
   }
 }
 
@@ -185,7 +189,6 @@
 
 .is-visible {
   display: block;
-  position: absolute;
   top: 48px;
   left: 0;
   font-size: 14px;
@@ -196,7 +199,7 @@
 .valid-input:hover,
 .valid-input:focus,
 .valid-input:active {
-  border-color: var(--Success_message);
+  border-color: #25c77c;
 }
 
 .invalid-input,
@@ -208,7 +211,7 @@
 
 /* modal */
 
-.modal {
+.modal-worktogether {
   width: 100%;
   height: 100%;
   background: rgba(15, 15, 16, 0.6);
@@ -222,7 +225,7 @@
   z-index: 99;
 }
 
-.modal.is-open {
+.modal-worktogether.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
@@ -262,6 +265,10 @@
 .modal-window-btn:active,
 .modal-window-btn:hover {
   background-color: #e0373f;
+}
+
+.modal-window-btn-icon {
+  color: #fafafa;
 }
 
 .modal-title {
