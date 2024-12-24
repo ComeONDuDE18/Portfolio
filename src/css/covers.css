@@ -1,0 +1,110 @@
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.container-covers {
+  background-image: url(../img/imgcovers/background-mob.png);
+  backdrop-filter: blur(30px);
+  background-color: rgba(217, 217, 217, 0.04);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .container-covers {
+    background-image: url(../img/imgcovers/background-mob-2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .container-covers {
+    background-image: url(../img/imgcovers/background-tab.png);
+    backdrop-filter: blur(30px);
+    background-color: rgba(217, 217, 217, 0.04);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .container-covers {
+    background-image: url(../img/imgcovers/background-tab-2x.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+  .container-covers {
+    background-image: url(../img/imgcovers/background-desc.png);
+    backdrop-filter: blur(30px);
+    background-color: rgba(217, 217, 217, 0.04);
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .container-covers {
+    background-image: url(../img/imgcovers/background-desc-2x.png);
+  }
+}
+
+.title-covers {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  max-height: 960px;
+  overflow: hidden;
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(-300px);
+}
+
+.marquee-inner {
+  display: flex;
+  transform: rotate(16deg);
+  margin-top: 20px;
+}
+
+.marquee-line {
+  flex-shrink: 0;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
