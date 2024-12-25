@@ -17,7 +17,7 @@
     <script type="module" crossorigin src="/Portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-DQFbmjRP.js">
     <link rel="stylesheet" crossorigin href="/Portfolio/assets/vendor-CvDh5HLe.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DVpEk0M6.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DG_j_QYV.css">
   </head>
   <body>
     <section class="header" id="header">
@@ -650,24 +650,28 @@
     </h2>
     <form class="submit-form submit-form-js">
       <div class="input-wrap">
-        <input
-          type="email"
-          class="input"
-          name="userEmail"
-          id="user-email"
-          placeholder="clients@gmail.com"
-        />
-        <span class="email-text-success">Success!</span>
-        <span class="email-text-error">Invalid email, try again!</span>
-        <input
-          type="text"
-          class="input"
-          name="userComments"
-          id="user-comments"
-          placeholder="comments"
-          autocomplete="off"
-        />
-        <span class="comments-text-error">This field is required!</span>
+        <div>
+          <input
+            type="email"
+            class="input"
+            name="userEmail"
+            id="user-email"
+            placeholder="clients@gmail.com"
+          />
+          <span class="email-text-success">Success!</span>
+          <span class="email-text-error">Invalid email, try again!</span>
+        </div>
+        <div>
+          <input
+            type="text"
+            class="input"
+            name="userComments"
+            id="user-comments"
+            placeholder="comments"
+            autocomplete="off"
+          />
+          <span class="comments-text-error">This field is required!</span>
+        </div>
       </div>
       <button class="send-btn" type="submit">Send</button>
     </form>
@@ -683,18 +687,11 @@
         </li>
       </ul>
     </address>
-    <div class="modal">
+    <div class="modal-worktogether">
       <div class="modal-window">
         <button type="button" class="modal-window-btn">
-          <svg class="modal-window-btn-icon" width="14" height="14">
-            <use href="../img/SVG/menu-close.svg"></use>
-          </svg>
+          <img src="../img/svg/menu-close.svg" alt="close-button" />
         </button>
-        <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
-        <p class="modal-message">
-          The manager will contact you shortly to discuss further details and
-          opportunities for cooperation. Please stay in touch.
-        </p>
       </div>
     </div>
   </div>
