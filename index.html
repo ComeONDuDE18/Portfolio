@@ -24,27 +24,54 @@
     <script type="module" crossorigin src="/Portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-DQFbmjRP.js">
     <link rel="stylesheet" crossorigin href="/Portfolio/assets/vendor-CvDh5HLe.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-8rtQPJJk.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-BrrH-ZYe.css">
   </head>
   <body>
-    <header class="header">
-      <section id="header">
-  <div class="navigation-menu container">
-    <a class="logo-link" href="#header">
-      <img src="/Portfolio/assets/logo-tkAeFsU2.svg" width="80" height="80" alt="logo" />
-      <p class="logo-name">jefferson*</p>
-    </a>
-    <button class="menu-btn">
+    <header class="header" id="header">
+      <div class="navigation-menu container">
+  <a class="logo-link" href="#header">
+    <img src="/Portfolio/assets/logo-tkAeFsU2.svg" width="80" height="80" alt="logo" />
+    <p class="logo-name">jefferson*</p>
+  </a>
+  <button class="menu-btn">
+    <img
+      src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M3.5%209.91666H24.5M3.5%2018.0833H24.5'%20stroke='%23FAFAFA'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+      width="28"
+      height="28"
+      alt="menu-button"
+    />
+  </button>
+  <div class="menu-container">
+    <button id="menuButton" class="menu-tab">Menu</button>
+    <ul id="dropdownMenu" class="dropdown hidden">
+      <li class="menu-item">
+        <a href="#aboutme">About me</a>
+      </li>
+      <li class="menu-item">
+        <a href="#benefits">Benefits</a>
+      </li>
+      <li class="menu-item">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="menu-item">
+        <a href="#faq">FAQ</a>
+      </li>
+    </ul>
+  </div>
+  <a href="#worktogether" class="order-btn order-btn-tab">Order the project</a>
+</div>
+<div class="modal-overlay hidden">
+  <div class="modal">
+    <button class="modal-close-btn">
       <img
-        src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M3.5%209.91666H24.5M3.5%2018.0833H24.5'%20stroke='%23FAFAFA'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+        src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21%207L7%2021'%20stroke='%23FAFAFA'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M7%207L21%2021'%20stroke='%23FAFAFA'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
         width="28"
         height="28"
-        alt="menu-button"
+        alt="close-button"
       />
     </button>
-    <div class="menu-container">
-      <button id="menuButton" class="menu-tab">Menu</button>
-      <ul id="dropdownMenu" class="dropdown hidden">
+    <nav class="menu">
+      <ul class="menu-list">
         <li class="menu-item">
           <a href="#aboutme">About me</a>
         </li>
@@ -58,41 +85,10 @@
           <a href="#faq">FAQ</a>
         </li>
       </ul>
-    </div>
-    <a href="#worktogether" class="order-btn order-btn-tab"
-      >Order the project</a
-    >
+    </nav>
+    <a href="#worktogether" class="order-btn">Order the project</a>
   </div>
-  <div class="modal-overlay hidden">
-    <div class="modal">
-      <button class="modal-close-btn">
-        <img
-          src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21%207L7%2021'%20stroke='%23FAFAFA'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M7%207L21%2021'%20stroke='%23FAFAFA'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
-          width="28"
-          height="28"
-          alt="close-button"
-        />
-      </button>
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a href="#aboutme">About me</a>
-          </li>
-          <li class="menu-item">
-            <a href="#benefits">Benefits</a>
-          </li>
-          <li class="menu-item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="menu-item">
-            <a href="#faq">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#worktogether" class="order-btn">Order the project</a>
-    </div>
-  </div>
-</section>
+</div>
 
     </header>
 
@@ -1755,7 +1751,6 @@
 </section>
 
     </footer>
-
 
   </body>
 </html>
