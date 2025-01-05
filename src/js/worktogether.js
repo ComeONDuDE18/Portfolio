@@ -29,6 +29,9 @@ const emailValidate = email => {
   const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   const isValidEmail = pattern.test(email);
 
+  emailError.classList.remove(VALID_INPUT.isVisible);
+  emailSuccess.classList.remove(VALID_INPUT.isVisible);
+
   if (!isValidEmail) {
     inputEmail.classList.add(VALID_INPUT.invalid);
     emailError.classList.add(VALID_INPUT.isVisible);
